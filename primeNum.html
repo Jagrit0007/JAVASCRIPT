@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let j=0;
+        for (let i=2;i<=100;i++)
+        {
+            let k=0;
+            for (let j=1;j<=i;j++)
+            {
+                if (i%j==0)
+                {
+                    k++;
+                }
+            }
+            if (k==2)
+            {
+                console.log(i);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // take a number num as a input from the user. create an array of numbers from 1 to n.
+        // use the reduce method to find the sum of all numbers in the array
+        // use the reduce method to find the product of all the numbers in the array ie.factorial
+        let num=prompt("ENTER A NUMBER:");
+        let arr=[];
+        for (let i=0;i<num;i++)
+        {
+             arr[i]=i+1;
+        }
+        console.log(arr);
+
+        const sum=arr.reduce((prev,curr)=>{
+            return prev+curr;
+        });
+         
+        const fac=arr.reduce((prev,curr)=>{
+            return prev*curr;
+        });
+
+        console.log(sum);
+        console.log(fac);
+    </script>
+</body>
+</html>

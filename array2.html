@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        let arr=["BloomBerg","Microsoft","Uber","Google","IBM","Netflix"];
+       
+        for (let ar in arr)
+        {
+            console.log(arr[ar]);
+            
+        }
+
+        // remove first company from the array
+        arr.splice(0,1);
+        console.log(arr);
+
+        // remove uber and add ola
+        arr.splice(1,1,"ola");
+        console.log(arr);
+
+        // Add amazon add the end
+        arr.push("amazon");
+        console.log(arr);
+     </script>
+</body>
+</html>
