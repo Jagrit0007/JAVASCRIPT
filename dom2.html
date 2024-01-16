@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            background-color: aqua;
+            margin: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- create 3 div with same class name "box". Access them and add some unique text to each of them-->
+    <div class="box">FIRST DIV</div>
+    <div class="box">SECOND DIV</div>
+    <div class="box">THIRD DIV</div>
+    <script>
+        let divs=document.querySelectorAll(".box");
+        let id=1;
+        for (let div of divs)
+        {
+            div.innerText=`NEW VALUE ${id}`;
+            id++;
+        }
+    </script>
+</body>
+</html>
