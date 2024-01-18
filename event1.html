@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="btn">CLICK ME!</button>
+
+    <script>
+           /*Create a toggle button that changes the screen to dark-mode when clicked & light-mode
+           when clicked again.  */
+          let btn=document.querySelector("#btn");
+          let mode="light";
+          btn.addEventListener("click",()=>{
+               if (mode=='light')
+               {
+                mode='dark';
+                document.querySelector("body").style.backgroundColor="black";
+               }
+               else
+               {
+                mode='light';
+                document.querySelector("body").style.backgroundColor="white";
+               }
+        })
+    </script>
+</body>
+</html>
